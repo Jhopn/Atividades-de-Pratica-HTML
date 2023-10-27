@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <hr>
+    <label for="Buscador">Pesquise:</label>
+    <input type="search" name='Buscador' value="Buscador">
+    <hr>
+    <br>
+
+    <form action="action.html" method="get">
+
+
+
+            <fieldset>
+            <legend>Nome</legend>
+            <label for="primeiroNome">Digite seu primeiro nome:</label>
+            <br>
+            <input type="text" name="primeiroNome" size="30" placeholder="Digite seu primeiro nome aqui" required>
+            <br>
+
+            <label for="ultimoNome">Digite seu ultimo nome:</label>
+            <br>
+            <input type="text" name="ultimoNome" size="30" required placeholder="Digite seu segundo nome aqui" >
+            <br>
+            </fieldset>
+            <br>
+
+
+            <fieldset>
+                <legend>Idade</legend>
+                <label for="idade">Idade:</label>
+                <input type="number" name="idade" range="120" required disabled>
+
+                <label for="quantidade">Quantidade:</label>
+                <input type="range" name="quantidade" >
+            </fieldset>
+            <br>
+
+            <fieldset>
+            <legend>Sexo</legend>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" value="masculino">
+            <br>
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="sexo" value="feminino" checked>
+            <br>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Mensagem</legend>
+                <label for="mensagem">Mensagem:</label>
+                <br>
+                <textarea name="mensagem"cols="30" rows="10" placeholder="Digite sua mensagem aqui" required></textarea>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Localização</legend>
+                <label for="estado">Seu estado:</label>
+                <select name="Localização">
+                    <option value="Maranhão">Maranhão</option>
+                    <option value="Piauí">Piauí</option>
+                    <option value="Ceara">Ceara</option>
+                    <option value="Pernambuco">Pernambuco</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Documentos</legend>
+                <label for="documento">Documento com foto:</label>
+                <input type="file" name="documento">
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Senha</legend>
+                <label for="senha">Senha:</label>
+                <input type="password" required>
+                <br>
+                <label for="senha">Digite a senha novamente:</label>
+                <input type="password" required>
+            </fieldset>
+            <br>
+            <button type= "submit">ENVIAR</button>
+    </form>
+</body>
+</html>
